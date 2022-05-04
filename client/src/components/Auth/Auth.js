@@ -80,7 +80,7 @@ const Auth = () => {
           </Grid>
           <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>{isSignup ? 'Sign Up' : 'Sign In'}</Button>
           <GoogleLogin
-            clientId="Your-google-client-id-console.developers.google.com"
+            clientId="Your-google-client-id.console.developers.google.com"
             render={(renderProps) => (
               <Button className={classes.googleButton} color='primary' fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
                 Google Sign In

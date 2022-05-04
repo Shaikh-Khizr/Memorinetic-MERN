@@ -1,5 +1,5 @@
 import { FETCH_POST, FETCH_ALL, FETCH_BY_SEARCH, CREATE, UPDATE, COMMENT, DELETE, START_LOADING, END_LOADING } from '../constants/actionTypes';
-export default (state = { isLoading: true, posts: [] }, action) => {
+const reducers = (state = { isLoading: true, posts: [] }, action) => {
     switch (action.type) {
         case START_LOADING:
             return { ...state, isLoading: true };
@@ -35,3 +35,5 @@ export default (state = { isLoading: true, posts: [] }, action) => {
             return state;
     }
 };
+
+export default reducers;
